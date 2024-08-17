@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Vicky</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .page {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #page1 {
+            display: flex;
+            background: linear-gradient(135deg, #FFA07A, #7FFFD4);
+        }
+
+        #page2 {
+            display: flex;
+            background: linear-gradient(135deg, #FFFACD, #98FB98);
+        }
+
+        #page3 {
+            display: flex;
+            background: linear-gradient(135deg, #FFC0CB, #FFDAB9);
+        }
+
+        #page4 {
+            display: flex;
+            background: linear-gradient(135deg, #9370DB, #FFA07A);
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+        }
+
+        .main-image {
+            max-width: 100%;
+            max-height: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .extra-images img {
+            max-width: 150px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Página 1 -->
+    <div class="page" id="page1">
+        <h1>Feliz cumpleaños Vicky! de parte de Fer jj</h1>
+        <img class="main-image" src="https://cdn.discordapp.com/attachments/1206689746101731422/1274106700831658055/IMG-20240720-WA0126.jpg" alt="Imagen Principal">
+        <div class="extra-images">
+            <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2226741017467100" alt="Hello Kitty Cumpleaños">
+            <img src="https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=2226741017467100" alt="Hello Kitty Cumpleaños">
+            <img src="https://img.chilango.com/2019/08/cumpleanos-de-hello-kitty-en-la-cdmx.jpg" alt="Hello Kitty Cumpleaños">
+        </div>
+        <button onclick="nextPage('page2')">Siguiente</button>
+    </div>
+
+    <!-- Página 2 -->
+    <div class="page" id="page2">
+        <h2>Este es tu segundo cumpleaños el cual compartimos los dos y con ganas de celebrar todo juntos para toda la vida.</h2>
+        <img class="main-image" src="https://cdn.discordapp.com/attachments/1206689746101731422/1274106701179650109/IMG-20231007-WA0076.jpg" alt="Imagen Principal">
+        <div class="extra-images">
+            <img src="https://i.pinimg.com/originals/13/24/00/13240090402ee717d506a52a03809928.jpg" alt="Gossip Girl Collage">
+            <img src="https://wallpapers.com/images/hd/pinterest-aesthetic-gossip-girl-collage-wyx6vswj5h2fympu.jpg" alt="Gossip Girl Collage">
+        </div>
+        <button onclick="nextPage('page3')">Siguiente</button>
+    </div>
+
+    <!-- Página 3 -->
+    <div class="page" id="page3">
+        <h2>Eres una mujer increíble y estoy muy orgulloso de ti, siempre voy a estar orgulloso y siempre te voy a apoyar porque sé que serás una persona muy exitosa, todo tu esfuerzo dará frutos mi vida.</h2>
+        <img class="main-image" src="https://cdn.discordapp.com/attachments/1206689746101731422/1274106701452415139/IMG-20230904-WA0838.jpg" alt="Imagen Principal">
+        <div class="extra-images">
+            <img src="https://w0.peakpx.com/wallpaper/326/156/HD-wallpaper-tvd-laptop-vampire-diaries-vampire-diaries-ian-somerhalder-vampire-diaries-klaus-mikaelson.jpg" alt="The Vampire Diaries Collage">
+            <img src="https://i.pinimg.com/originals/8f/4b/56/8f4b56778680070fa01b3d158d6bf4bd.jpg" alt="Ian Somerhalder Collage">
+        </div>
+        <button onclick="nextPage('page4')">Siguiente</button>
+    </div>
+
+    <!-- Página 4 -->
+    <div class="page" id="page4">
+        <h2>Quizás este no sea el cumpleaños que quisieras tener y que las cosas no te estén saliendo bien, pero quiero que sepas que no estás sola para afrontar todo, me ayudaste cuando estaba en mi mejor momento y ahora no pudiera estar mejor, quiero darte todo lo bueno que mereces y que en tu día especial seas feliz y la pases increíble princesa, feliz cumpleaños mi amor, te amo muchísimo. “No tienes idea del tiempo que te he esperado.” - Ron a Hermione.</h2>
+        <img class="main-image" src="https://cdn.discordapp.com/attachments/1206689746101731422/1274106701804601355/IMG-20240405-WA0174.jpg" alt="Imagen Principal">
+        <div class="extra-images">
+            <img src="https://i.pinimg.com/originals/e4/5f/d7/e45fd72b13543efefd8b9173442d0ded.jpg" alt="Harry Potter Collage">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3b9e2c05-e373-462d-aa3c-74584e9e051f/d4n7jey-f54cc767-a1d3-4d90-a4f2-ae014c44c6d0.jpg" alt="Harry Potter Collage">
+        </div>
+        <button onclick="nextPage('page1')">Volver a la Portada</button>
+    </div>
+
+    <script>
+        function nextPage(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'flex';
+        }
+
+        // Mostrar la primera página al cargar
+        document.getElementById('page1').style.display = 'flex';
+    </script>
+</body>
+</html>
