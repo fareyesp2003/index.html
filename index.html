@@ -12,7 +12,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
+            overflow-y: auto;
+            overflow-x: hidden;
         }
 
         .page {
@@ -23,7 +24,7 @@
             text-align: center;
             height: 100%;
             width: 100%;
-            padding: 20px;
+            padding: 10px;
             box-sizing: border-box;
         }
 
@@ -49,11 +50,11 @@
 
         h1, h2 {
             margin-bottom: 10px;
-            font-size: 3vw; /* Ajuste de tamaño de fuente */
+            font-size: 5vw; /* Tamaño de fuente ajustado para pantallas pequeñas */
         }
 
         .main-image {
-            max-width: 80%;
+            max-width: 90%;
             max-height: 40vh;
             border-radius: 10px;
             margin-bottom: 10px;
@@ -72,14 +73,14 @@
         }
 
         button {
-            padding: 8px 16px;
-            font-size: 14px;
+            padding: 10px 15px;
+            font-size: 4vw; /* Tamaño de fuente para el botón */
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         button:hover {
@@ -89,16 +90,19 @@
         /* Ajustes para pantallas pequeñas */
         @media (max-width: 600px) {
             h1, h2 {
-                font-size: 5vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+                font-size: 6vw; /* Tamaño de fuente más pequeño para pantallas muy pequeñas */
             }
 
             .main-image {
-                max-width: 90%;
-                max-height: 30vh; /* Ajuste de tamaño de la imagen principal */
+                max-height: 35vh; /* Ajuste de la altura máxima de la imagen principal */
             }
 
             .extra-images img {
-                max-width: 50%; /* Ajuste del tamaño de las imágenes extra en pantallas pequeñas */
+                max-width: 45%; /* Ajuste del tamaño de las imágenes en pantallas pequeñas */
+            }
+
+            button {
+                font-size: 5vw; /* Ajuste del tamaño de fuente del botón en pantallas pequeñas */
             }
         }
     </style>
