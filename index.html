@@ -48,15 +48,15 @@
         }
 
         h1, h2 {
-            margin-bottom: 20px;
-            font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas pequeñas */
+            margin-bottom: 10px;
+            font-size: 3vw; /* Ajuste de tamaño de fuente */
         }
 
         .main-image {
-            max-width: 90%;
-            max-height: 50vh;
+            max-width: 80%;
+            max-height: 40vh;
             border-radius: 10px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .extra-images {
@@ -66,20 +66,20 @@
         }
 
         .extra-images img {
-            max-width: 40%;
+            max-width: 30%;
             margin: 5px;
             border-radius: 10px;
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            padding: 8px 16px;
+            font-size: 14px;
             background-color: #4CAF50;
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 20px;
+            margin-top: 15px;
         }
 
         button:hover {
@@ -89,11 +89,16 @@
         /* Ajustes para pantallas pequeñas */
         @media (max-width: 600px) {
             h1, h2 {
-                font-size: 6vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+                font-size: 5vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+            }
+
+            .main-image {
+                max-width: 90%;
+                max-height: 30vh; /* Ajuste de tamaño de la imagen principal */
             }
 
             .extra-images img {
-                max-width: 70%; /* Ajuste del tamaño de las imágenes en pantallas pequeñas */
+                max-width: 50%; /* Ajuste del tamaño de las imágenes extra en pantallas pequeñas */
             }
         }
     </style>
