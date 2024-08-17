@@ -49,18 +49,25 @@
 
         h1, h2 {
             margin-bottom: 20px;
+            font-size: 4vw; /* Ajuste de tamaño de fuente para pantallas pequeñas */
         }
 
         .main-image {
-            max-width: 100%;
-            max-height: 300px;
+            max-width: 90%;
+            max-height: 50vh;
             border-radius: 10px;
             margin-bottom: 20px;
         }
 
+        .extra-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
         .extra-images img {
-            max-width: 150px;
-            margin: 10px;
+            max-width: 40%;
+            margin: 5px;
             border-radius: 10px;
         }
 
@@ -77,6 +84,17 @@
 
         button:hover {
             background-color: #45a049;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 600px) {
+            h1, h2 {
+                font-size: 6vw; /* Ajuste de tamaño de fuente para pantallas muy pequeñas */
+            }
+
+            .extra-images img {
+                max-width: 70%; /* Ajuste del tamaño de las imágenes en pantallas pequeñas */
+            }
         }
     </style>
 </head>
@@ -139,4 +157,3 @@
     </script>
 </body>
 </html>
-
